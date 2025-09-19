@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Main Branch</title>
+<style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #4a90e2, #357ab7);
+        color: white;
+        border_radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    svg {
+      margin-top: 10px;
+    }
+
+    section {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 600px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+        margin-bottom: 15px;
+        color: #357ab7;
+    }
+    progress {
+        width: 100%;
+        height: 20px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+        background: #357ab7;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #285c8e;
+    }
+    </style>
+   </head>
+
+
+<body>
+    <header>
+        <h1>Main Branch</h1>
+        <svg width="300" height="250">
+            <circle CX="100" CY="100" R="100" fill="black" />
+        </svg>
+
+        <section>
+            <h2>My Skills Progress</h2>
+            <p>HTML Learning Progress</p>
+            <progress value="35" max="100"></progress>
+            <p>CSS Learning Progress:</p>
+            <progress value="40" max="100"></progress>
+            <p>JavaScript Learning Progress:</p>
+            <progress value="50" max="100"></progress>
+        </section>
+        <section>
+            <h2>Search Example</h2>
+            <label for="tools">Favorite Web Tool:</label>
+            <input id="tools" type="text" list="webtools" placeholder="Choose or type a tool">
+            <datalist id="webtools">
+                <option value="Visual Studio Code">
+                <option value="Subline Text">
+                <option value="Figma">
+                <option value="GitHub">
+              <datalist>
+              </section>
+              <section>
+                <h2>Contact Me</h2>
+                <form autocomplete="off">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required autofocus>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+                    <label for="url">Portfolio Website:</label>
+                    <input type="url" id="url" name="url" placeholder="https://example.com">
+
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" name="tel" placeholder="555-555-1211">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+                </section>
+            </body>
